@@ -1,10 +1,12 @@
 import './sass/app.scss';
-import { NavBar } from './components/NavBar'
+import { NavBar } from './components/NavBar'; 
+import {ItemsListContainer} from './components/ItemsListContainer'; 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <NavBar /> 
+      <ItemsListContainer/>
     </div>
   );
 }
