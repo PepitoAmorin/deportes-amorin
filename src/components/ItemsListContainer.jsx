@@ -1,4 +1,4 @@
-export const ItemsListContainer = () => 
+export const ItemsListContainer = ({placeholder}) => 
 <section>
-  <h1>Próximamente vamos a poner cosas acá</h1>
+  <h1>{placeholder}</h1>
 </section>

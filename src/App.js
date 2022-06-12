@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <NavBar /> 
-      <ItemsListContainer/>
+      <ItemsListContainer placeholder='Acá van a ir todos los elementos'/>
     </div>
   );
 }
