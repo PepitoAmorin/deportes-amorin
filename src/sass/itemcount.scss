@@ -1,0 +1,24 @@
+.contador {
+  width: 200px; 
+  padding: 25px; 
+  background-color: aliceblue;
+  border: 1px solid grey; 
+  p {
+    margin: 0 auto 5px; 
+    text-align: center; 
+  }
+  .botones__container {
+    width: 90%; 
+    margin: 25px auto;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    background-color: rgb(153, 202, 246); 
+    .boton {
+      background-color: rgb(246, 248, 250); 
+      font-size: 16px;
+      border: none; 
+      border-radius: 3px;
+    }
+  }
+}
