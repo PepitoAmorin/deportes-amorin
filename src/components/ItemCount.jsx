@@ -1,16 +1,16 @@
 import { useState } from "react";
 
-export const ItemCount = ({ stock }) => {
-  const [counter, setCounter] = useState(1); 
+export const ItemCount = ({ stock, initial }) => {
+  const [counter, setCounter] = useState(initial); 
  
   // agregar un producto. 
   const increase = () => {
-    setCounter(q => q + 1);
+    setCounter(counter => counter + 1);
   };
  
   // sacar un producto. 
   const decrease = () => {
-    setCounter(q => q - 1);
+    setCounter(counter => counter - 1);
   };
  
   return (
