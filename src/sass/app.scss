@@ -1,4 +1,16 @@
-//pages
+// settings and variables
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: system-ui, sans-serif; 
+  --primary-color: rgb(13,32,187); 
+  --dark-color: rgba(1,11,93,1); 
+  --clear-color: #fff; 
+} 
+
+//pages 
 
 //components
 @import 'navbar'; 

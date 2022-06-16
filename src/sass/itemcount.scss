@@ -1,7 +1,7 @@
 .contador {
   width: 200px; 
   padding: 25px; 
-  background-color: aliceblue;
+  background-color: var(--clear-color);
   border: 1px solid grey; 
   p {
     margin: 0 auto 5px; 
@@ -13,9 +13,9 @@
     padding: 10px;
     display: flex; 
     justify-content: space-between; 
-    background-color: rgb(153, 202, 246); 
+    background-color: var(--primary-color); 
     .boton {
-      background-color: rgb(246, 248, 250); 
+      background-color: var(--clear-color); 
       font-size: 16px;
       border: none; 
       border-radius: 3px;

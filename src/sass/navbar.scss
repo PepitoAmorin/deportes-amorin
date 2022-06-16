@@ -6,9 +6,10 @@
   display: flex; 
   justify-content: space-between; 
   align-items: center;
-  background-color: transparent; 
+  background: var(--primary-color);
+  background: linear-gradient(90deg, var(--primary-color) 0%, var(--dark-color) 93%);
   span, a {
-    color: rgb(8, 98, 215); 
+    color: var(--clear-color); 
     font-size: 16px; 
     text-decoration: none; 
     margin: 0 10px 0 0; 

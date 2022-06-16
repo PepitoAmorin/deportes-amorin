@@ -5,8 +5,8 @@
   display: flex; 
   flex-direction: column; 
   align-items: center;
-  background-color: rgb(6, 36, 234); 
-  color: #fff; 
+  background-color: var(--primary-color); 
+  color: var(--clear-color); 
   border-radius: 3px; 
   .product-card__product-name, .product-card__product-price { 
     margin: 5px; 
@@ -19,7 +19,7 @@
     height: 200px; 
     display: flex; 
     justify-content: center;
-    background-color: #fff; 
+    background-color: var(--clear-color); 
     border-radius: 3px; 
     img {
       height: 100%; 
