@@ -13,7 +13,7 @@ export const ItemsListContainer = () => {
   return (
     <section className='items-list-container'>
       {
-        products.length == 0 ? <h1> Cargando... </h1> : <ItemList productos={products} /> 
+        products.length == 0 ? <h1> Cargando... </h1> : <ItemList productos = { products } /> 
       }
       
     </section> 
