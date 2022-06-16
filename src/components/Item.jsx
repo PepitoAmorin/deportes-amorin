@@ -6,7 +6,7 @@ export const Item = ({ title, price, itemUrl}) =>
   <div className="image-container">
     <img 
       className="product-card__product-image" 
-      src={itemUrl} 
+      src={itemUrl}  alt={title}
     />
   </div>
   <div className="product-card__product-price"> 

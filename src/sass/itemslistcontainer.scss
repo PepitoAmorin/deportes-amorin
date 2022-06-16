@@ -1,5 +1,5 @@
 .items-list-container { 
-  height: 120vh;
+  min-height: 120vh;
   margin: 50px 25px; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
