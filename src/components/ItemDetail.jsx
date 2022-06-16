@@ -11,7 +11,7 @@ export const ItemDetail = ( {producto} ) => {
         />
       </div> 
       <section className='item-page__product-details'>
-        <div className="item-page__product-name">
+        <div className='item-page__product-name'>
           {producto.title}
         </div> 
         <div className="item-page__product-price"> 

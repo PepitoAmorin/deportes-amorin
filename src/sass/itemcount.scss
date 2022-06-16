@@ -1,7 +1,11 @@
 .contador {
   width: 250px; 
-  p {
-    text-align: center;
+  p { 
+    max-width: 200px; 
+    margin: 0 auto;
+    text-align: center; 
+    background-color: var(--tag-color); 
+    color: var(--clear-color);
   }
   .botones__container {
     width: 90%; 

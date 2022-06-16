@@ -1,5 +1,22 @@
 .item-page {
   display: flex; 
   justify-content: center; 
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+  .item-page__product-details { 
+    margin: 50px 0; 
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    .item-page__product-name { 
+      margin: 0 0 25px;
+      font-size: 18px; 
+      font-weight: 700;
+      color: var(--primary-color);
+    } 
+    .item-page__product-price { 
+      margin: 0 0 25px;
+      font-size: 30px; 
+      color: var(--dark-color);
+    }
+  }
 }
