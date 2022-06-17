@@ -1,18 +1,21 @@
 .contador {
   width: 250px; 
-  p { 
-    max-width: 200px; 
-    margin: 0 auto;
-    text-align: center; 
-    background-color: var(--tag-color); 
+  .con-stock, .sin-stock { 
+    max-width: 150px;
+    /* margin: 0 auto; */
+    text-align: center;
+    background-color: var(--tag-color);
     color: var(--clear-color);
+  } 
+  .sin-stock {
+    background-color: var(--alert-color);
   }
   .botones__container {
-    width: 90%; 
-    margin: 5px auto 25px;
+    width: 150px;
+    margin: 5px 0 25px;
     padding: 10px;
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color); 
     .contador_numero {
@@ -20,10 +23,11 @@
       font-size: 18px;
     }
     .boton {
-      background-color: var(--clear-color); 
-      padding: 5px;
-      font-size: 16px;
-      border: none; 
+      background-color: var(--clear-color);
+      display: flex;
+      padding: 0 10px 5px;
+      font-size: 20px;
+      border: none;
       border-radius: 3px;
     }
   }

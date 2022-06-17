@@ -1,7 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export const ItemCount = ({stock}) => {
-  const [counter, setCounter] = useState(1);  
+export const ItemCount = ({stock}) => { 
+  
+  const [counter, setCounter] = useState();  
+
+  //setear a 0 si no hay stock. 
+  useEffect(() => { 
+    {if ( stock === 0) {
+      setCounter(0)
+    } else {
+      setCounter(1)
+    }
+  }})
+
  
   // agregar un producto. 
   const increase = () => {
@@ -16,7 +27,11 @@ export const ItemCount = ({stock}) => {
   return (
     <div className="contador">
       
-      <p>(quedan sólo: {stock})</p>
+      { stock > 0 ? 
+        <p className='con-stock'>(quedan sólo: {stock})</p> : 
+        <p className='sin-stock'>No quedan más por el momento </p>  
+      }
+  
       <div className="botones__container">
         <button 
           className="boton" 
@@ -29,7 +44,7 @@ export const ItemCount = ({stock}) => {
         <button 
           className="boton" 
           onClick={increase} 
-          disabled={counter >= stock}
+          disabled={counter >= stock || stock === 0}
         >
           +
         </button>

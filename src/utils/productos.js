@@ -6,7 +6,7 @@ const productos = [
   {id: 5, title: 'Camiseta Paraguay', price: 990, itemUrl: 'https://www.cambiodecamiseta.com/wp-content/uploads/2017/11/Camiseta-Paraguay-2018-Home.jpg', stock: 15}, 
   {id: 6, title: 'Camiseta Bolivia', price: 990, itemUrl: 'http://cdn.shopify.com/s/files/1/0567/6639/8509/products/Sin_titulo-1_d1100a7c-d4e4-499f-9e06-0c5963606f7c_1200x1200.jpg?v=1644343748', stock: 3}, 
   {id: 7, title: 'Camiseta Perú', price: 990, itemUrl: 'https://www.walon.com.pe/web/image/product.product/22005/image_1920', stock: 7}, 
-  {id: 8, title: 'Camiseta Ecuador', price: 990, itemUrl: 'https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/GRCMUTSOMNGPLE7X2PWMPUAVNQ.jpg', stock: 2}, 
+  {id: 8, title: 'Camiseta Ecuador', price: 990, itemUrl: 'https://cloudfront-us-east-1.images.arcpublishing.com/eluniverso/GRCMUTSOMNGPLE7X2PWMPUAVNQ.jpg', stock: 0}, 
   {id: 9, title: 'Camiseta Colombia', price: 2990, itemUrl: 'https://falabella.scene7.com/is/image/FalabellaCO/4946063_b?wid=800&hei=800&qlt=70', stock: 93}, 
   {id: 10, title: 'Camiseta Venezuela', price: 990, itemUrl: 'https://cdn.shopify.com/s/files/1/0578/1422/0976/products/givova-camiseta-futbol-venezuela-2022-vinotinto-original_1024x1024.jpg?v=1641849531', stock: 100}, 
 ] 
