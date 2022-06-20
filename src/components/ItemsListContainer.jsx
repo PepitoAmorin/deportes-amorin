@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { fetchProducts } from '../utils/fetchProducts';
 import { fetchCategory } from '../utils/fetchCategory';
 import { useParams } from 'react-router-dom'; 
-import { Link } from 'react-router-dom';
 
 export const ItemsListContainer = () => {
 
@@ -13,9 +12,17 @@ export const ItemsListContainer = () => {
 
   useEffect(() => { 
     if (category) {
-      fetchCategory(category).then(res => setProducts(res)) 
+      fetchCategory(category)
+      .then(res => setProducts(res)) 
+      .catch((error) => {
+        console.error(error) 
+      })
     } else {
-      fetchProducts().then(res => setProducts(res))
+      fetchProducts()
+      .then(res => setProducts(res))
+      .catch((error) => {
+        console.error(error) 
+      })
     }
   }, [category]) 
 

@@ -8,12 +8,14 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState();  
 
   const { id } = useParams(); 
-
   
   useEffect(() => {
     fetchProduct(parseInt(id)) 
       .then(res => setProduct(res))
-  }, []) 
+      .catch((error) => {
+        console.error(error) 
+      })
+  }, [id]) 
 
   return (
     <section className='item-page-container'>
