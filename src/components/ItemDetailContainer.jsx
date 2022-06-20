@@ -1,20 +1,25 @@
 import { ItemDetail } from './ItemDetail'; 
 import { useState, useEffect } from 'react';
 import { fetchProduct } from '../utils/fetchProduct';
+import { useParams } from 'react-router-dom'; 
 
-export const ItemDetailContainer = () => {
 
-  const [product, setProduct] = useState(); 
+const ItemDetailContainer = () => { 
+  const [product, setProduct] = useState();  
 
+  const { id } = useParams(); 
+
+  
   useEffect(() => {
-    fetchProduct(2)
+    fetchProduct(parseInt(id)) 
       .then(res => setProduct(res))
   }, []) 
 
   return (
     <section className='item-page-container'>
-        { !product ? <h1> Cargando... </h1> : <ItemDetail producto = { product } /> }
-         
+        { product ? <ItemDetail producto = { product } /> : <h1> Cargando... </h1> } 
     </section> 
   ) 
-}
+} 
+
+export { ItemDetailContainer }; 

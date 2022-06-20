@@ -2,7 +2,7 @@
   width: 250px; 
   .con-stock, .sin-stock { 
     max-width: 150px;
-    /* margin: 0 auto; */
+    margin: 0 auto; 
     text-align: center;
     background-color: var(--tag-color);
     color: var(--clear-color);
@@ -12,7 +12,7 @@
   }
   .botones__container {
     width: 150px;
-    margin: 5px 0 25px;
+    margin: 5px auto 25px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,8 @@
       font-size: 18px;
     }
     .boton {
-      background-color: var(--clear-color);
+      background-color: var(--clear-color); 
+      color: var(--dark-color);
       display: flex;
       padding: 0 10px 5px;
       font-size: 20px;
@@ -31,4 +32,16 @@
       border-radius: 3px;
     }
   }
+} 
+
+@media screen and (min-width: 582px){ 
+  .contador {
+    .con-stock, .sin-stock {
+      margin: 0; 
+  } 
+    .botones__container { 
+      margin: 5px 0 25px; 
+  }
+  
+  } 
 }

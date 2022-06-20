@@ -2,16 +2,16 @@ import { useEffect, useState } from "react";
 
 export const ItemCount = ({stock}) => { 
   
-  const [counter, setCounter] = useState();  
+  const [counter, setCounter] = useState(1);  
 
   //setear a 0 si no hay stock. 
-  useEffect(() => { 
-    {if ( stock === 0) {
-      setCounter(0)
-    } else {
-      setCounter(1)
-    }
-  }})
+  // useEffect(() => { 
+  //   if ( stock === 0) {
+  //     setCounter(0)
+  //   } else {
+  //     setCounter(1)
+  //   }
+  // }, [])
 
  
   // agregar un producto. 

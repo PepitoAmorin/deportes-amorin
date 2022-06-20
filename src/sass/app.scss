@@ -4,12 +4,17 @@
   margin: 0; 
   padding: 0; 
   box-sizing: border-box; 
+  color: var(--clear-color);
   font-family: system-ui, sans-serif; 
   --primary-color: rgb(13,32,187); 
+  --secondary-color:  rgb(53, 136, 219); 
+  --secondary-color-light:  rgba(53, 136, 219, 0.5); 
   --dark-color: rgba(1,11,93,1); 
   --clear-color: #fff; 
   --tag-color: rgb(19, 194, 7); 
-  --alert-color: red;
+  --alert-color: red; 
+  --gradient-a: linear-gradient(90deg, var(--primary-color) 0%, var(--dark-color) 93%); 
+  --neutral-color: rgb(145, 177, 200); 
 } 
 
 //pages 
