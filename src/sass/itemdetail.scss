@@ -1,4 +1,9 @@
-.item-page {
+h1 { 
+  margin: 25px; 
+  color: blue; 
+  text-align: center;
+}
+.item-page { 
   display: flex; 
   justify-content: center; 
   flex-wrap: wrap; 

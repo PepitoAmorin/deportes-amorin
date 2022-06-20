@@ -7,7 +7,6 @@ import { useParams } from 'react-router-dom';
 export const ItemsListContainer = () => {
 
   const [products, setProducts] = useState( [] ); 
-
   const { category } = useParams(); 
 
   useEffect(() => { 
@@ -24,9 +23,7 @@ export const ItemsListContainer = () => {
         console.error(error) 
       })
     }
-  }, [category]) 
-
-  
+  }) 
     
   return (
     <section className='items-list-container'>
